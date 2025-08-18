@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jericho’s Final Project — Page 1</title>
+  <meta name="description" content="Responsive magazine layout using semantic HTML, CSS Grid, and Flexbox." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class="site-header" role="banner">
+  <div class="brand"><a href="index.html">Jericho’s Final Project</a></div>
+  <nav class="site-nav" aria-label="Primary">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Page 1</a></li>
+      <li><a href="page-2.html">Page 2</a></li>
+      <li><a href="page-3.html">Page 3</a></li>
+      <li><a href="scans.html">Scanned Images</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content" tabindex="-1">
+  <article class="feature" role="article">
+    <header class="article-hero">
+      <p class="kicker">Feature</p>
+      <h1 class="headline">Rhythms in Design: Turning Print Layouts into Responsive Web</h1>
+      <p class="byline">By Jericho · Art Direction Practice</p>
+    </header>
+
+    <figure class="hero-figure">
+      <img src="assets/scan-1.jpg" alt="Scanned page 1" />
+      <figcaption>Page 1 Spread</figcaption>
+    </figure>
+
+    <div class="article-grid">
+      <section class="lede">
+        <p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae arcu a sapien hendrerit cursus. Aliquam lacinia, sapien sed sagittis porta, sem mi lobortis magna, a condimentum elit metus non urna.</p>
+        <p>Curabitur in metus at nisl tristique feugiat. Vestibulum tincidunt rhoncus est, sit amet bibendum leo aliquet ac. Duis euismod, nibh a dapibus efficitur, eros ante vulputate nisl, sit amet tristique leo neque vel dolor.</p>
+      </section>
+
+      <aside class="pull-quote" aria-label="Pull quote">
+        <blockquote>
+          “Good responsive layout keeps the magazine’s visual hierarchy—and lets it breathe on every screen.”
+        </blockquote>
+        <cite>&mdash; Instructor Notes</cite>
+      </aside>
+
+      <section class="body-columns">
+        <h2 class="section-title">Structure &amp; Rhythm</h2>
+        <p>Quisque placerat, ipsum non fermentum condimentum, risus tellus maximus lectus, ut ultrices mauris urna vel sapien. Integer id convallis justo. Morbi a justo vitae lectus gravida rutrum. Suspendisse ultricies arcu in arcu congue, sed porttitor mauris eleifend.</p>
+        <p>Nunc vel sollicitudin enim. Aliquam erat volutpat. Morbi finibus malesuada arcu, vitae feugiat ipsum ultrices non. Sed accumsan augue at dui tristique, ut iaculis odio interdum. Fusce vitae elit id arcu mattis efficitur.</p>
+        <p>Donec a ante non lacus aliquet pellentesque. Aenean vitae dolor non est tempor luctus. Integer interdum lorem at justo vehicula, in vulputate mauris lacinia. Etiam commodo libero nec mi ultricies, quis fringilla purus tempus.</p>
+      </section>
+    </div>
+
+    <footer class="article-footer">
+      <ul class="tags" aria-label="Article tags">
+        <li>#SemanticHTML</li>
+        <li>#CSSGrid</li>
+        <li>#ResponsiveDesign</li>
+      </ul>
+    </footer>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="y1"></span> Jericho. Built for the Final Project: Responsive Web Design Based on a Magazine Article.</p>
+</footer>
+<script>document.getElementById('y1').textContent = new Date().getFullYear();</script>
+</body>
+</html>

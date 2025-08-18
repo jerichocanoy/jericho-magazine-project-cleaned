@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jericho’s Final Project — Page 2</title>
+  <meta name="description" content="Page 2 of the responsive magazine layout." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class="site-header" role="banner">
+  <div class="brand"><a href="index.html">Jericho’s Final Project</a></div>
+  <nav class="site-nav" aria-label="Primary">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="index.html">Page 1</a></li>
+      <li><a href="page-2.html" aria-current="page">Page 2</a></li>
+      <li><a href="page-3.html">Page 3</a></li>
+      <li><a href="scans.html">Scanned Images</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content" tabindex="-1">
+  <article class="feature">
+    <header class="article-hero compact">
+      <h1 class="headline">Page 2 — Grids, Columns &amp; Type</h1>
+      <p class="deck">Using Grid for macro layout and flex/columns for micro rhythm.</p>
+    </header>
+
+    <div class="article-grid">
+      <section class="body-columns">
+        <h2>Grid as a Design System</h2>
+        <p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus velit odio, sed volutpat magna suscipit nec. Cras mattis, velit sed vehicula molestie, lacus justo tincidunt neque, non placerat arcu ante in massa.</p>
+        <p>Pellentesque id metus quis mi faucibus varius. Cras vel leo at felis condimentum interdum. Duis a metus risus. Sed id lorem at velit ornare finibus.</p>
+        <p>Nam id pellentesque leo. Nulla facilisi. Morbi hendrerit, arcu sed imperdiet laoreet, magna arcu pellentesque lorem, a consequat nibh purus et odio.</p>
+      </section>
+
+      <aside class="sidebar-note">
+        <h3>Design Note</h3>
+        <p>At larger breakpoints, text flows in two columns to mirror print. Images can span the grid to recreate full-bleed moments.</p>
+      </aside>
+
+      <figure class="inline-figure">
+        <img src="assets/scan-2.jpg" alt="Scanned page 2" />
+        <figcaption>Page 2 Spread</figcaption>
+      </figure>
+
+      <section class="body-columns">
+        <h2>Type Hierarchy</h2>
+        <p>Aliquam vitae iaculis lacus. Fusce id consectetur enim. Sed ullamcorper, ipsum quis tristique hendrerit, lacus nisi posuere quam, sed aliquet mi enim id mi. Sed rhoncus, sapien in dictum varius, dui lectus pharetra leo, nec efficitur risus magna id felis.</p>
+        <p>Proin consequat, felis non semper suscipit, ante sem convallis nibh, vitae tincidunt elit nibh vel urna. Suspendisse potenti. Integer ornare cursus risus, ac varius lorem pulvinar vitae.</p>
+      </section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="y2"></span> Jericho. Built for the Final Project: Responsive Web Design Based on a Magazine Article.</p>
+</footer>
+<script>document.getElementById('y2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

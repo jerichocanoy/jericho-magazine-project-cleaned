@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jericho’s Final Project — Page 3</title>
+  <meta name="description" content="Page 3 of the responsive magazine layout." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class="site-header" role="banner">
+  <div class="brand"><a href="index.html">Jericho’s Final Project</a></div>
+  <nav class="site-nav" aria-label="Primary">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links">
+      <li><a href="index.html">Page 1</a></li>
+      <li><a href="page-2.html">Page 2</a></li>
+      <li><a href="page-3.html" aria-current="page">Page 3</a></li>
+      <li><a href="scans.html">Scanned Images</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content" tabindex="-1">
+  <article class="feature">
+    <header class="article-hero compact">
+      <h1 class="headline">Page 3 — Bringing It Together</h1>
+      <p class="deck">Spacing, alignment, and consistent components.</p>
+    </header>
+
+    <div class="article-grid">
+      <section class="body-columns">
+        <h2>Consistent Components</h2>
+        <p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ac lorem a massa suscipit iaculis.</p>
+        <p>Integer lobortis urna in felis dictum, a facilisis arcu ultricies. Nulla ut laoreet mi, ac facilisis neque. Morbi sed orci faucibus, dictum urna in, bibendum dolor.</p>
+        <p>Vivamus mollis, dui a feugiat posuere, odio justo dictum augue, ut ornare neque lorem at nunc. Integer quis sem non orci iaculis convallis.</p>
+      </section>
+
+      <aside class="pull-quote alt" aria-label="Pull quote">
+        <blockquote>“Focus on matching structure and hierarchy, not pixel perfection.”</blockquote>
+      </aside>
+
+      <section class="body-columns">
+        <h2>Testing Responsiveness</h2>
+        <p>Use DevTools device emulation to test small (phones), medium (tablets), and large (desktop) breakpoints. Ensure the navigation is usable at all sizes and content reflows without awkward gaps.</p>
+        <p>Finally, review color contrast and link focus states for accessibility.</p>
+      </section>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="y3"></span> Jericho. Built for the Final Project: Responsive Web Design Based on a Magazine Article.</p>
+</footer>
+<script>document.getElementById('y3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
